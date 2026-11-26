@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="Reze Roir Bot by Subadashii · Catálogo interactivo de comandos">
+  <title>Reze Roir Bot · by Subadashii</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="cover.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand-mark">✿</div>
+      <div class="brand">
+        <p class="eyebrow">REZE ROIR · COMMAND CENTER</p>
+        <h1>Reze Roir Bot</h1>
+        <p class="sub">by Subadashii</p>
+      </div>
+      <div class="online"><i></i> EN LÍNEA</div>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Portada de Reze Roir Bot">
+        <div class="hero-image" role="img" aria-label="Ilustración monocromática de una chica anime sosteniendo una flor"></div>
+        <div class="hero-shade"></div>
+        <div class="hero-badge">✧ MENÚ INTERACTIVO</div>
+        <div class="hero-content">
+          <p class="hero-kicker">CATÁLOGO DIGITAL</p>
+          <h2 class="glow-title">¡Bienvenido al menú de comandos nuevo!</h2>
+          <p class="hero-copy">Explora las categorías, busca un comando y copia su sintaxis.</p>
+        </div>
+        <div class="hero-signature">Reze Roir <span>by Subadashii</span></div>
+      </section>
+
+      <section class="toolbar" aria-label="Buscar comandos">
+        <label class="search glass"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Buscar comando..." autocomplete="off"><kbd>/</kbd></label>
+        <button id="clear" class="clear-btn glass" type="button" aria-label="Limpiar búsqueda">×</button>
+      </section>
+
+      <nav id="category-nav" class="category-nav" aria-label="Filtrar categorías"></nav>
+
+      <section class="results-head">
+        <div><p class="eyebrow">EXPLORADOR</p><h2 id="section-title">Todos los comandos</h2></div>
+        <span id="result-count" class="result-count"></span>
+      </section>
+      <section id="command-list" class="category-sections" aria-live="polite"></section>
+      <p class="footnote">Catálogo independiente: permite consultar y copiar comandos, pero no ejecutarlos en WhatsApp.</p>
+    </main>
+
+    <footer><span class="footer-script">Reze Roir Bot</span><span>BY SUBADASHII</span></footer>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
